@@ -82,7 +82,7 @@ bar.hello();
 "use strict";
 class Foo {
   hello() {
-    alert('hello world');
+    console.log('Richard');
   }
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = Foo;
