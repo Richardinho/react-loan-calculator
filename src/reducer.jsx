@@ -1,14 +1,14 @@
 export let initialState = {
-  foo: 'this is foo',
-  bar: 'Hello this is bar'
+  amount: 1314,
+  term: 24,
 };
 
 let reducer = (state = initialState, action) => {
   switch (action.type) {
-  case 'FOO':
-    return Object.assign({}, state, { foo: action.value });
-  case 'BAR':
-    return Object.assign({}, state, { bar: action.value});
+  case 'CHANGE_AMOUNT':
+    return Object.assign({}, state, { amount: action.value });
+  case 'SET_TERM':
+    return Object.assign({}, state, { term: action.value });
   }
   return state;
 };

@@ -1,8 +1,7 @@
-import React from 'react';
+import {  createStore } from 'redux';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
 import { render } from 'react-dom';
-
+import React from 'react';
 import  reducer, { initialState } from './reducer.jsx';
 import Calculator from './calculator.jsx';
 

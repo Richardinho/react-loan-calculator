@@ -2,23 +2,27 @@ import React from 'react';
 import AmountInputField from './amount-input-field.jsx';
 import AmountRangeField from './amount-range-field.jsx';
 import LoanTerm from './loan-term.jsx';
+import ResultsPanel from './results-panel.jsx';
 
-export default function () {
+export default function ({ completionFee, interest, totalCost, setTerm, minAmount, maxAmount, amount, changeAmount, term }) {
   return (
     <div>
-      <AmountInputField/>
-      <AmountRangeField/>
-      <LoanTerm/> 
+      <AmountInputField 
+        minAmount={ minAmount } 
+        maxAmount={ maxAmount} 
+        amount={ amount } 
+        changeAmount={ changeAmount } />
+      <AmountRangeField 
+        minAmount={ minAmount } 
+        maxAmount={ maxAmount} 
+        amount={ amount } 
+        changeAmount={ changeAmount }/>
+      <LoanTerm term={ term } setTerm={ setTerm } /> 
       <h3 >Fixed monthly payments</h3>
-      
-      <button type="button">
-        Show breakdown
-      </button>
-      <div>
-        Completion fee 
-        Interest
-        Total cost of loan
-      </div>
+      <ResultsPanel 
+        completionFee={ completionFee } 
+        interest={ interest } 
+        totalCost={ totalCost } /> 
     </div>
   );
 }

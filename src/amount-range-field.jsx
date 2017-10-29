@@ -1,12 +1,15 @@
 import React from 'react';
 
-export default function amountRangeField() {
-
+export default function amountRangeField({ minAmount, maxAmount, changeAmount, amount }) {
   return (
     <div>
-      <input id="loan-amount-slider"  type="range" min="5000" max="1000000"/> 
-      <span htmlFor="loan-amount-slider">5,000</span> 
-      <span htmlFor="loan-amount-slider">1,000,000</span>
+      <input 
+        id="loan-amount-slider"  
+        type="range" 
+        onChange={ e => { changeAmount(e.target.value);}  }
+        value={ amount }
+        min={ minAmount }  
+        max={ maxAmount} /> 
     </div>
   );
 }

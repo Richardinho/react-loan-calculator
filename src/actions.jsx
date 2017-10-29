@@ -1,16 +1,15 @@
-
-let getBarAction = (value) => {
+let getChangeAmountAction = (value) => {
   return {
-    type: 'BAR',
+    type: 'CHANGE_AMOUNT',
     value
   };
 };
 
-let getFooAction = (value) => {
+let getSetTermAction = (value) => {
   return {
-    type: 'FOO',
-    value,
+    type: 'SET_TERM',
+    value
   };
 };
 
-export { getFooAction, getBarAction };
+export { getChangeAmountAction, getSetTermAction };

@@ -31,7 +31,9 @@ module.exports = {
             "error",
             "always"
         ],
-        "react/jsx-uses-vars" : ["error"]
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars" : ["error"],
+        "react/prefer-es6-class": 1
 
     }
 };
