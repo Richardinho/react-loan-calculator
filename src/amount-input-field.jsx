@@ -1,5 +1,6 @@
 import React from 'react';
 import NumberFormat from 'react-number-format';
+import styles from './amount-input.scss';
 
 export default class AmountInputField extends React.Component {
 
@@ -37,10 +38,10 @@ export default class AmountInputField extends React.Component {
 
   render() {
     return (
-      <div>      
-        <h3 >How much do you want to borrow?</h3>
+      <div className={ styles.amountInput }>      
+        <h3 className={ styles.header } >How much do you want to borrow?</h3>
         <NumberFormat 
-          
+          className={ styles.inputField }
           onValueChange={ (data) => {
             this.handleChange(data.value); 
           }} 
@@ -49,7 +50,7 @@ export default class AmountInputField extends React.Component {
           thousandSeparator={true} 
           prefix={'$'} />
         { this.state.message  && 
-            <p className="label--error">
+            <p className={ styles.labelError }>
               { this.state.message }
             </p>
         }  

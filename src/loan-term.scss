@@ -1,0 +1,38 @@
+$width: 100px;
+$padding: 10px;
+.input {
+  display: none;
+}
+
+
+.radio {
+  $border: 15px;
+  box-shadow: 0 0 0 15px black;
+  $radio-width: $width - ($padding * 2 + $border * 2); 
+  border-radius: 50%;
+  padding: $radio-width / 2;
+  background: black;
+  position: absolute;
+  right: $padding + $border;
+  bottom: $padding + $border;
+}
+
+.checked {
+  background: orange;
+}
+
+.label {
+  padding: 20px;
+  font-family : arial;
+  text-align: center;
+  display: block;
+  line-height: 20px;
+}
+.radio-buttons {
+  display: inline-block;
+  width: $width;
+  margin-right: 12px;
+  height: 150px;
+  position: relative;
+  background: orange;
+}
