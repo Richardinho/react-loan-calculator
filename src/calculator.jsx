@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import  calculatorView from './calculator-view.jsx';
 
 const mapStateToProps = (state) => {
-
+console.log('map state to props', state);
   let data = calculateAmortisedValue(state.amount, state.term);  
 
   return {
