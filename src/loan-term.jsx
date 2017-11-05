@@ -7,7 +7,7 @@ export default function loanTerm({ setTerm, term }) {
       <h3 >Loan term (years)</h3>
       <ol>
         <li className={ styles.radioButtons }>
-          <label htmlFor="6" className={ styles.label }>0.50</label>
+          <label data-test="term-6" htmlFor="6" className={ styles.label }>0.50</label>
           <input
             id="6"
             className={ styles.input }
