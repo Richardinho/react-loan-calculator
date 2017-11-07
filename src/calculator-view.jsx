@@ -6,6 +6,7 @@ import ResultsPanel from './results-panel.jsx';
 import styles from './calculator.scss';
 
 export default function ({ completionFee, interest, totalCost, setTerm, minAmount, maxAmount, amount, changeAmount, term }) {
+
   return (
     <div className={ styles.calculator }>
       <AmountInputField 

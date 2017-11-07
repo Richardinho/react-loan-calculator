@@ -16,7 +16,7 @@ export default class AmountInputField extends React.Component {
   }
 
   handleChange(val) {
-    
+
     if (val < this.props.minAmount) {
       this.setState({
         message: 'amount must be greater than the minimum',
@@ -32,11 +32,11 @@ export default class AmountInputField extends React.Component {
     }
 
     this.props.changeAmount(val); 
-    
   }
 
-
   render() {
+
+
     return (
       <div className={ styles.amountInput }>      
         <h3 className={ styles.header } >How much do you want to borrow?</h3>
@@ -45,7 +45,7 @@ export default class AmountInputField extends React.Component {
           onValueChange={ (data) => {
             this.handleChange(data.value); 
           }} 
-        
+          type='tel'
           value={this.props.amount} 
           thousandSeparator={true} 
           prefix={'$'} />
