@@ -16,7 +16,6 @@ export default class AmountInputField extends React.Component {
   }
 
   handleChange(val) {
-
     if (val < this.props.minAmount) {
       this.setState({
         message: 'amount must be greater than the minimum',
