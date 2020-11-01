@@ -1,19 +1,23 @@
-$width: 100px;
-$padding: 10px;
+body {
+  --width: 100px;
+  --padding: 10px;
+}
+
 .input {
   display: none;
 }
 
 .radio {
-  $border: 15px;
+  --border: 15px;
+  --radio-width: calc(var(--width) - (var(--padding) * 2 + var(--border) * 2)); 
+
   box-shadow: 0 0 0 15px black;
-  $radio-width: $width - ($padding * 2 + $border * 2); 
   border-radius: 50%;
-  padding: $radio-width / 2;
+  padding: calc(var(--radio-width) / 2);
   background: black;
   position: absolute;
-  right: $padding + $border;
-  bottom: $padding + $border;
+  right: calc(var(--padding) + var(--border));
+  bottom: calc(var(--padding) + var(--border));
 }
 
 .checked {
@@ -30,7 +34,7 @@ $padding: 10px;
 
 .radioButtons {
   display: inline-block;
-  width: $width;
+  width: var(--width);
   margin-right: 12px;
   height: 150px;
   position: relative;

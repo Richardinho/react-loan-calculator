@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './loan-term.scss';
+import styles from './loan-term.css';
 
 export default function loanTerm({ setTerm, term }) {
   return (

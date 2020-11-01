@@ -1,6 +1,6 @@
 import React from 'react';
 import NumberFormat from 'react-number-format';
-import styles from './amount-input.scss';
+import styles from './amount-input.css';
 
 export default class AmountInputField extends React.Component {
 

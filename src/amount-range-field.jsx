@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './amount-range-field.scss';
+import styles from './amount-range-field.css';
 
 export default function amountRangeField({ minAmount, maxAmount, changeAmount, amount }) {
   return (
