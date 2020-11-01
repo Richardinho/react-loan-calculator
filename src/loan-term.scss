@@ -4,7 +4,6 @@ $padding: 10px;
   display: none;
 }
 
-
 .radio {
   $border: 15px;
   box-shadow: 0 0 0 15px black;
@@ -28,7 +27,8 @@ $padding: 10px;
   display: block;
   line-height: 20px;
 }
-.radio-buttons {
+
+.radioButtons {
   display: inline-block;
   width: $width;
   margin-right: 12px;
