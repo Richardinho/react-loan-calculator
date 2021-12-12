@@ -13,7 +13,7 @@ export default function loanTerm({ setTerm, term }) {
             data-test="term-6"
             className={ styles.input }
             onChange={ () => setTerm(6) }
-            type="radio"  
+            type="radio"
             checked={ term == 6 }
           />
           <label htmlFor="6" className={ styles.radio + ' ' + (term == 6 && styles.checked) }></label>
@@ -24,7 +24,7 @@ export default function loanTerm({ setTerm, term }) {
             id="12"
             className={ styles.input }
             onChange={ () => setTerm(12)}
-            type="radio"  
+            type="radio"
             checked={ term == 12 }
           />
           <label htmlFor="12" className={ styles.radio + ' ' + (term == 12 && styles.checked) }></label>
@@ -42,18 +42,18 @@ export default function loanTerm({ setTerm, term }) {
         </li>
         <li className={ styles.radioButtons }>
           <label htmlFor="36" className={ styles.label }>3</label>
-          <input   
+          <input
             id="36"
             className={ styles.input }
             onChange={ () => setTerm(36) }
-            type="radio"  
+            type="radio"
             checked={ term ==36}
           />
           <label htmlFor="36" className={ styles.radio + ' ' + (term == 36 && styles.checked) }></label>
         </li>
         <li className={ styles.radioButtons }>
           <label htmlFor="48" className={ styles.label }>4</label>
-          <input 
+          <input
             id="48"
             className={ styles.input }
             onChange={ () => setTerm(48) }

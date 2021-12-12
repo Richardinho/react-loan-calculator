@@ -20,7 +20,7 @@ export default function ({ completionFee, interest, totalCost, setTerm, minAmoun
         amount={ amount } 
         changeAmount={ changeAmount }/>
       <LoanTerm term={ term } setTerm={ setTerm } /> 
-      <h3 >Fixed monthly payments</h3>
+      <h3>Fixed monthly payments</h3>
       <ResultsPanel 
         completionFee={ completionFee } 
         interest={ interest } 

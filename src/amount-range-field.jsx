@@ -5,12 +5,12 @@ export default function amountRangeField({ minAmount, maxAmount, changeAmount, a
   return (
     <div className={ styles.amountRange }>
       <input 
-        id="loan-amount-slider"  
-        type="range" 
+        id="loan-amount-slider"
+        type="range"
         onChange={ e => { changeAmount(e.target.value);}  }
         value={ amount }
-        min={ minAmount }  
-        max={ maxAmount} /> 
+        min={ minAmount }
+        max={ maxAmount} />
     </div>
   );
 }
